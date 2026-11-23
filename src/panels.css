@@ -1,0 +1,280 @@
+.p-app {
+ min-height: 100vh;
+ background: #e9e1cf;
+}
+
+.p-top {
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+ flex-wrap: wrap;
+ background: var(--coffee);
+ color: var(--bone);
+ padding: .8rem 1.25rem;
+}
+
+.p-brand {
+ font-family: 'DM Serif Display', serif;
+ font-size: 1.2rem;
+ margin-right: auto;
+}
+
+.p-top a {
+ color: var(--gold);
+ font-size: .9rem;
+}
+
+.p-roles {
+ display: flex;
+ background: #ffffff18;
+ border-radius: 999px;
+ padding: .2rem;
+}
+
+.p-roles button {
+ position: relative;
+ background: none;
+ color: var(--bone);
+ padding: .4rem 1.1rem;
+ border-radius: 999px;
+ z-index: 0;
+}
+
+.p-roles .pill {
+ position: absolute;
+ inset: 0;
+ background: var(--red);
+ border-radius: 999px;
+ z-index: -1;
+}
+
+.p-main {
+ max-width: 1150px;
+ margin: 0 auto;
+ padding: 1.5rem 1.25rem 4rem;
+}
+
+.p-note {
+ font-size: .8rem;
+ opacity: .7;
+ margin-bottom: 1rem;
+}
+
+.p-tabs {
+ display: flex;
+ gap: .4rem;
+ flex-wrap: wrap;
+ margin-bottom: 1.5rem;
+}
+
+.p-tabs button {
+ position: relative;
+ background: none;
+ padding: .5rem 1rem;
+ border-radius: 999px;
+ color: var(--ink);
+ z-index: 0;
+}
+
+.p-tabs .on {
+ color: var(--bone);
+}
+
+.p-tabs .pill {
+ position: absolute;
+ inset: 0;
+ background: var(--coffee);
+ border-radius: 999px;
+ z-index: -1;
+}
+
+.p-grid {
+ display: grid;
+ gap: 1rem;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.p-two {
+ display: grid;
+ gap: 1.25rem;
+ grid-template-columns: 1fr 1fr;
+}
+
+.p-card {
+ background: #fffc;
+ border-radius: 1rem;
+ padding: 1.2rem;
+ border: 1px solid #2a171018;
+}
+
+.p-card h3 {
+ font-size: 1.2rem;
+ margin-bottom: .8rem;
+}
+
+.p-stat b {
+ display: block;
+ font-family: 'DM Serif Display', serif;
+ font-size: 2.2rem;
+ color: var(--coffee);
+ line-height: 1.1;
+}
+
+.p-stat small {
+ opacity: .7;
+}
+
+.p-bars {
+ display: flex;
+ align-items: flex-end;
+ gap: .5rem;
+ height: 170px;
+}
+
+.p-bars div {
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-end;
+ height: 100%;
+ font-size: .75rem;
+}
+
+.p-bars i {
+ display: block;
+ width: 100%;
+ background: var(--teal);
+ border-radius: .4rem .4rem 0 0;
+}
+
+.p-split {
+ display: flex;
+ height: 1.2rem;
+ border-radius: 999px;
+ overflow: hidden;
+ margin: .6rem 0;
+}
+
+.p-row {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: .8rem;
+ padding: .6rem 0;
+ border-bottom: 1px solid #2a171015;
+ flex-wrap: wrap;
+}
+
+.p-meter {
+ height: .5rem;
+ background: var(--gold);
+ border-radius: 99px;
+ margin-top: .3rem;
+}
+
+.p-badge {
+ font-size: .78rem;
+ padding: .2rem .7rem;
+ border-radius: 999px;
+ background: var(--gold);
+ color: var(--coffee);
+ white-space: nowrap;
+}
+
+.p-badge.ok {
+ background: var(--teal);
+ color: var(--bone);
+}
+
+.p-badge.bad {
+ background: var(--red);
+ color: var(--bone);
+}
+
+.p-sw {
+ width: 3rem;
+ height: 1.6rem;
+ border-radius: 99px;
+ background: #2a171044;
+ position: relative;
+ padding: 0;
+}
+
+.p-sw.on {
+ background: var(--teal);
+}
+
+.p-sw i {
+ position: absolute;
+ top: .2rem;
+ left: .2rem;
+ width: 1.2rem;
+ height: 1.2rem;
+ border-radius: 50%;
+ background: #fff;
+}
+
+.p-sw.on i {
+ left: 1.6rem;
+}
+
+.p-app input {
+ width: 90px;
+}
+
+.p-chips {
+ display: flex;
+ gap: .5rem;
+ flex-wrap: wrap;
+ margin-bottom: 1rem;
+}
+
+.p-chips button {
+ background: #fff;
+ border: 2px solid #2a171022;
+ padding: .5rem .9rem;
+ border-radius: 999px;
+}
+
+.p-qr {
+ display: grid;
+ grid-template-columns: repeat(15, 1fr);
+ width: 180px;
+ margin: 1rem auto;
+ padding: 8px;
+ background: #fff;
+ border-radius: .5rem;
+ position: relative;
+}
+
+.p-qr i {
+ aspect-ratio: 1;
+}
+
+.p-qr i.on {
+ background: var(--coffee);
+}
+
+.p-qr .exp {
+ position: absolute;
+ inset: 0;
+ background: #fffe;
+ display: grid;
+ place-items: center;
+ font-weight: 700;
+ color: var(--red);
+ border-radius: .5rem;
+}
+
+.p-time {
+ text-align: center;
+ font-family: 'DM Serif Display', serif;
+ font-size: 1.8rem;
+}
+
+@media (max-width: 800px) {
+ .p-two {
+  grid-template-columns: 1fr;
+ }
+}

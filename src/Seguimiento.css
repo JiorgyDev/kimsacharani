@@ -1,0 +1,111 @@
+.seg-head {
+ display: flex;
+ align-items: center;
+ gap: .6rem;
+ margin-bottom: .9rem;
+}
+
+.seg-head h3 {
+ margin: 0;
+}
+
+.seg-list {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+ gap: .9rem;
+}
+
+.seg-pedido {
+ display: flex;
+ flex-direction: column;
+ gap: .7rem;
+ padding: 1rem;
+ border-radius: 16px;
+ border: 1px solid rgba(128, 128, 128, .3);
+ border-left-width: 5px;
+ background: rgba(128, 128, 128, .06);
+}
+
+.seg-pedido.tomado {
+ border-left-color: #c9a227;
+}
+
+.seg-pedido.preparando {
+ border-left-color: #d9732b;
+}
+
+.seg-pedido.servido {
+ border-left-color: var(--teal, #2a7);
+}
+
+.seg-top {
+ display: flex;
+ justify-content: space-between;
+ align-items: baseline;
+ gap: .6rem;
+}
+
+.seg-mesa {
+ font-size: 1.2rem;
+}
+
+.seg-top small {
+ opacity: .65;
+}
+
+.seg-steps {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: .25rem;
+}
+
+.seg-steps li {
+ font-size: .68rem;
+ text-align: center;
+ padding: .3rem .1rem;
+ border-radius: 8px;
+ background: rgba(128, 128, 128, .14);
+ opacity: .6;
+}
+
+.seg-steps li.done {
+ opacity: 1;
+ background: color-mix(in srgb, var(--teal, #2a7) 25%, transparent);
+}
+
+.seg-steps li.now {
+ opacity: 1;
+ background: var(--red, #a33);
+ color: #fff;
+ font-weight: 700;
+}
+
+.seg-items {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ font-size: .92rem;
+ display: flex;
+ flex-direction: column;
+ gap: .2rem;
+}
+
+.seg-go {
+ width: 100%;
+ padding-block: .75rem;
+}
+
+.seg-cobro {
+ display: flex;
+ flex-direction: column;
+ gap: .8rem;
+}
+
+.seg-acts {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: .5rem;
+}
