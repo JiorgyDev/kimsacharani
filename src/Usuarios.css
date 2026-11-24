@@ -48,6 +48,7 @@
  text-transform: uppercase;
  letter-spacing: .06em;
  opacity: .9;
+ min-width: 0;
 }
 
 .usr-form label.full {
@@ -63,12 +64,6 @@
  letter-spacing: normal;
 }
 
-@media (max-width: 560px) {
- .usr-form {
-  grid-template-columns: 1fr;
- }
-}
-
 .usr .btn.red {
  margin-top: .4rem;
 }
@@ -79,6 +74,7 @@
  align-items: center;
  gap: .6rem;
  margin-bottom: .6rem;
+ flex-wrap: wrap;
 }
 
 .usr-head h3 {
@@ -88,4 +84,20 @@
 .usr-row {
  gap: .8rem;
  flex-wrap: wrap;
+}
+
+@media (max-width: 560px) {
+ .usr-form {
+  grid-template-columns: 1fr;
+ }
+}
+
+@media (max-width: 420px) {
+ .usr-tipo {
+  grid-template-columns: 1fr;
+ }
+ .usr-row {
+  flex-direction: column;
+  align-items: flex-start;
+ }
 }

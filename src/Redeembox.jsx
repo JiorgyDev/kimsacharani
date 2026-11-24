@@ -31,11 +31,19 @@ export default function RedeemBox({ say }) {
     flexDirection: 'column',
     gap: '.8rem',
     alignItems: 'flex-start',
+    width: '100%',
    }}
   >
-   <div style={{ display: 'flex', gap: '.6rem', flexWrap: 'wrap' }}>
+   <div
+    style={{
+     display: 'flex',
+     gap: '.6rem',
+     flexWrap: 'wrap',
+     width: '100%',
+    }}
+   >
     <input
-     style={{ width: 'min(220px,100%)', textTransform: 'uppercase' }}
+     style={{ flex: '1 1 180px', maxWidth: 260, textTransform: 'uppercase' }}
      placeholder="Código de 6 caracteres"
      aria-label="Código de sello"
      maxLength={8}
@@ -50,7 +58,11 @@ export default function RedeemBox({ say }) {
      {cam ? 'Cerrar cámara' : 'Escanear QR'}
     </button>
    </div>
-   {cam && <Scanner onCode={go} />}
+   {cam && (
+    <div style={{ width: '100%' }}>
+     <Scanner onCode={go} />
+    </div>
+   )}
   </div>
  )
 }
